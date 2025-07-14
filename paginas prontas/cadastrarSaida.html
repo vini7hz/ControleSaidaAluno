@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Saídas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="cadastroSaida.js" defer></script>
+</head>
+<body>
+
+  <nav>
+    <h2>Painel Saídas</h2>
+    <ul>
+      <li><a href="index.html">🏚️ Inicial</a></li>
+      <li><a href="cadastrarSaida.html" class="ativo">✍🏻 Cadastrar</a></li>
+      <li><a href="consultarSaida.html">🔍 Consultar</a></li>
+      <li><a href="listarSaida.html">📋 Listar</a></li>
+    </ul>
+  </nav>
+
+  <h2 class="titulo">Página Cadastrar Saída</h2>
+
+  <div class="box">
+    <input type="date" id="dataSolicitacao" placeholder="Data da Solicitação">
+    <input type="time" id="horaSaida" placeholder="Hora da Saída">
+    <input type="time" id="horaRetorno" placeholder="Hora do Retorno">
+    <input type="text" id="motivo" placeholder="Motivo da Saída">
+    <input type="text" id="localDestino" placeholder="Local de Destino">
+    <input type="text" id="status" placeholder="Status">
+    <input type="text" id="nomeAluno" placeholder="Nome do Aluno">
+    <input type="text" id="nomeProfessor" placeholder="Nome do Professor">
+    <input type="number" id="aluno_cod" placeholder="ID do Aluno">
+    <input type="number" id="professor_cod" placeholder="ID do Professor">
+  
+    <button id="cadastroAluno">Cadastrar</button>
+    <br>
+    <div id="res"></div>
+  </div>
+  
+
+</body>
+</html>

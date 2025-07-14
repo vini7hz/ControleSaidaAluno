@@ -1,0 +1,48 @@
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="atualizarSaida.js"defer></script>
+    <title>Cadastro Saidas</title>
+  </head>
+  <body>
+
+    <nav>
+      <h2>Painel Saidas</h2>
+      <ul>
+        <li><a href="index.html">🏚️ Inicial</a></li>
+        <li><a href="cadastrarSaida.html"> ✍🏻 Cadastrar </a></li>
+        <li><a href="atualizarSaida.html"> 🔁 Atualizar </a></li>
+        <li><a href="deletarSaida.html"> 🗑️ Deletar </a></li>
+        <li><a href="consultarSaida.html"> 🔍 Consultar </a></li>
+        <li><a href="listarSaida.html"> 📋 Listar </a></li>
+      </ul>
+    </nav>
+
+      <h2 class="titulo"> Página Atualizar Saidas</h2>
+    <div class="box">
+      <input type="number" id="IdAluno" placeholder="Id da Saida">
+      <button id="consultarIdAluno">consultar</button>
+
+        <input type="date" id="dataSolicitacao" placeholder="Data">
+        <input type="time" id="horaSaida" placeholder="Hora Saida ">
+        <input type="text" id="motivo" placeholder="Motivo Saida">
+        <input type="text" id="localDestino" placeholder="Destino">
+        <input type="text" id="status" placeholder="Status">
+        <input type="text" id="nomeAluno" placeholder="Nome Do Aluno">
+        <input type="text" id="nomeProfessor" placeholder="Nome Do Professor">
+        
+        <button id="cadastroAluno">Atualizar</button>
+        <br>
+
+        <div id="res"></div>
+
+    </div>
+
+
+
+
+  </body>
+  </html>
