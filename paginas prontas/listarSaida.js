@@ -20,6 +20,7 @@ btnListar.addEventListener("click", () => {
       saidas.forEach(saida => {
         html += `
           <p>
+             <hr>
             <strong>ID:</strong> ${saida.codSaida}<br>
             <strong>Aluno:</strong> ${saida.nomeAluno}<br>
             <strong>Professor:</strong> ${saida.nomeProfessor}<br>

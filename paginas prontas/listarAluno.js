@@ -9,13 +9,16 @@ btnListar.addEventListener('click', () => {
       
       dados.forEach(e => {
         res.innerHTML += `
+        <p>
+          <hr>
           <strong>ID:</strong> ${e.codAluno}<br>
-          <strong>Nome:</strong> ${e.nome}<br>
+                 <strong>Nome:</strong> ${e.nome}<br>
           <strong>Sobrenome:</strong> ${e.sobrenome}<br>
           <strong>Email:</strong> ${e.email}<br>
           <strong>Telefone:</strong> ${e.telefone}<br>
           <strong>Matrícula:</strong> ${e.matricula}<br><br>
-                   <hr>
+           <hr>
+           </p>
         `
       })
     })
