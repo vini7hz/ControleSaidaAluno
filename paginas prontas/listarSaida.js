@@ -1,21 +1,21 @@
-let btnListar = document.getElementById("listarAluno");
-let res = document.getElementById("res");
+let btnListar = document.getElementById("listarAluno")  
+let res = document.getElementById("res")
 
 btnListar.addEventListener("click", () => {
   fetch("http://localhost:8081/saida")
     .then(response => {
-      if (!response.ok) throw new Error("Erro ao buscar saídas");
-      return response.json();
+      if (!response.ok) throw new Error("Erro ao buscar saídas")
+      return response.json()
     })
     .then(saidas => {
       if (saidas.length === 0) {
-        res.innerHTML = "<p>Nenhuma saída encontrada.</p>";
-        return;
+        res.innerHTML = "<p>Nenhuma saída encontrada.</p>"
+        return
       }
 
-      console.log("Saídas recebidas:", saidas);
+      console.log("Saídas recebidas:", saidas)
 
-      let html = "";
+      let html = ""
 
       saidas.forEach(saida => {
         html += `
@@ -31,12 +31,12 @@ btnListar.addEventListener("click", () => {
             <strong>Horário Retorno:</strong> ${saida.horaRetorno}
           </p>
           <hr>
-        `;
-      });
+        `
+      })
 
-      res.innerHTML = html;
+      res.innerHTML = html
     })
     .catch(error => {
-      res.innerHTML = `<p style="color:red;">Erro: ${error.message}</p>`;
-    });
-});
+      res.innerHTML = `<p style="color:red;">Erro: ${error.message}</p>`
+    })
+})
